@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>using this with object javascript</title>
+</head>
+<body>
+    
+    <script>
+        var F_person = {
+            name: 'john',
+            age : 16,
+            gender : 'Male',
+            occupation : 'software engineer'
+        }
+
+        var S_person = {
+            name: 'sarah',
+            age: '15',
+            gender : 'Female',
+            occupation : 'Software engineer'
+        }
+
+         function display_name(){
+             console.log(`hello my name is ${this.name}`);
+         }
+         function howOLD(){
+             console.log(`I am ${this.age} years old`);
+         }
+         F_person.howOLD = howOLD;
+         S_person.howOLD = howOLD;
+
+           F_person.howOLD();
+         
+        F_person.display_name=display_name;
+        S_person.display_name=display_name; 
+
+       F_person.display_name();
+    </script>
+</body>
+</html>

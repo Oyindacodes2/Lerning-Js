@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+<!--<h1>something</h1>
+    <div ng-app="myApp" ng-controller="namesCtrl">
+        <ul>
+            <li ng-repeat="x in names" ng-click="x in persons">
+                {{x.name + ',' + x.country}}
+            </li>
+        </ul>
+    </div>-->
+
+  <!--  <div ng-app="myApp" ng-directive="" ng-controller="namesCtrl">
+        <input placeholder="enter age" ng-model="name">
+        <h2>my name is {{name}}</h2>
+      </div>
+
+      <div ng-app="myApp" ng-controller="namesCtrl">
+
+        <p>Looping with objects:</p>
+        <ul>
+          <li ng-repeat="x in names | orderBy:'country'">
+            {{ x.name + ', ' + x.country }}
+          </li>
+        </ul>
+        
+        </div>-->  
+
+      <!--  <div ng-app="myApp" ng-controller="myCtrl">
+            <p> the time is:</p>
+            <h1>{{theTime}}</h1>
+        </div>
+
+        <div ng-app="myApp" ng-controller="myCtrl">
+            <p>Today welcome message is:</p>
+            <h1>{{myWelcome}}</h1>
+        </div>
+
+        <p>The $http service request on the page server, and the response is set as the value of the "myWelcome" variable.
+        </p>
+
+        <div ng-app="myApp" ng-controller="myCtrl">
+          <select ng-model="selectedCar" ng-options = "x.model for x in cars"> </select>
+
+          <h1> the car selected is <span ng-bind="selectedCar.model"></span> and the color is {{selectedCar.color}}</h1>
+         <h2 ng-mousemove="count=count+1">move over me</h2>
+         <p>{{count}}</p>
+        </div>
+
+        <div ng-app="myApp" ng-controller="myCtrl">
+        <form>
+           <h1>An angular js form example</h1>
+           <br><br>
+
+           <p>First name: </p><br>
+           <input type="text" ng-model="user.firstName"><br>
+           <p>Last name: </p><br>
+           <input type="text" ng-model="user.lastName"><br><br>
+           <button type="button" ng-click="reset()" data-toggle="collapse">RESET</button>
+        </form>
+
+        <p>form={{user.firstName + ','+ user.lastName}}</p>
+        <p>master={{master.firstName + ','+ master.lastName}}</p>
+      </div> -->
+
+  <!--   <div ng-app="myApp">
+        <p>try writing into the input field:</p><br><br>
+        <form name="myForm">
+          <input name="myInput" ng-model="myInput" required my-directive> 
+        </form>
+
+        <p>The input valid state is:</p>
+        <h1>{{myForm.myInput.$valid}}</h1>
+      </div>-->
+
+      <div ng-app="myApp" ng-controller="myCtrl">
+        <ul>
+          <li ng-repeat="x in names">
+            {{x.name | myName}}
+          </li>
+        </ul>
+      </div>
+
+        <script type="text/javascript">
+            var app = angular.module('myApp',[]);
+            app.filter('myName',function(){
+                return function(x){
+                      var i,c,txt ="";
+
+                      for(i =0; i<x.length; i++){
+                        c = x[i];
+                          if(i%2 == 0){
+                            c = c.toUpperCase();
+                          }
+
+                          txt +=c;
+                      }
+                      return txt; 
+                  }
+            });
+
+             app.controller('myCtrl',function($scope){
+               $scope.names = [{name:'damola',age:'17'},
+                                {name:'solomon',age:'18'},
+                                {name:'deji',age:'19'},
+                                {name:'tobi',age:'20'}];
+             })
+        </script>
+    <script src="jquery.js"></script>
+    <script src="javascript aptech.js"></script>
+</body>
+</html>

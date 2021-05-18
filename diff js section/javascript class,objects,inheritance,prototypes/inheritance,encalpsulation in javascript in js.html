@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class User{
+            constructor(username,email,password){
+                this.username =username;
+                this.email=email;
+                this.password=password;
+            }
+            static countUsers(){
+                console.log('There are 50 users');
+            }
+            register(){
+                console.log(this.username+' is now registered');
+            }
+        }
+      //  let bob = new User('bob','bob@gmail.com','12345');
+
+       // bob.register();
+       //User.countUsers();
+
+
+        class Member extends User{
+            constructor(username,email,memberPackg){
+                super(username,email);
+                this.package = memberPackg;
+            }
+
+             getPackage(){
+                 console.log(this.username+ 'is subscribed to the '+this.package+ ' package');
+             }
+        }
+        let mike = new Member('mike','mike@gmial.com','standard');
+
+       // mike.getPackage();
+       mike.register();
+    </script>
+</body>
+</html>

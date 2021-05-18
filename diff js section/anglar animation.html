@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        div{
+            background:lightblue;
+            position: relative;
+            width: 100%;
+            height: 100px;
+            transition: all linear 1s;
+            top: 0;
+            left: 0;
+        }
+    
+        .ng-hide{
+            height: 0;
+            width: 0;
+            top: -200px;
+            left: 200px;    
+            background-color: transparent;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>angular animation</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+
+</head>
+<body ng-app="myApp">
+ <h1> Hide the Div :<input type="checkbox" ng-model="myCheck"></h1>
+
+    <div ng-hide="myCheck"></div>
+    <script>
+   var app = angular.module('myApp',['ngAnimate']);
+    </script>
+</body>
+</html>

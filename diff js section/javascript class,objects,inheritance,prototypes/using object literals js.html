@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object literals</title>
+</head>
+<body>
+    
+
+    <script>
+        var sales = 'toyota';
+        var message = ' does not exist';
+
+         function C_cars(name){
+                if(name==='honda'){
+                    document.writeln("<h2>Congrats we have the car" +name+ " available</h2>");
+                    return name;
+                }else{
+                   return window.alert(name+" "+message);
+                }
+         }
+
+          var Cars = {myCar:'saturn', getCar: C_cars('honda'), special:sales};
+
+           console.log(Cars.myCar);
+           console.log(Cars.getCar);
+           console.log(Cars.special);
+
+    </script>
+</body>
+</html>

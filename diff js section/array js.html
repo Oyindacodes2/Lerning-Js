@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array js</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend><h3>form validation options</h3></legend>
+            <form>
+                <select id="select">
+                    <option value="javascript">javascript</option>
+                    <option value="python">python</option>
+                    <option value="c#">c#</option>
+                </select>
+            </form>
+        </fieldset>
+    </div>
+    
+    <script>
+       function isNumber (value){
+        return typeof value ==='number';
+       }
+
+       let a1 = [2,4,5];
+       console.log(a1.every(isNumber));
+
+       let a2 = [4,6,'32',1];
+       console.log(a2.every(isNumber));
+
+       let b1 = [2,3,4];
+
+       let b2 = b1.map(function(x){
+           return x*x*x;
+       })
+      
+         console.log(b2);
+    </script>
+</body>
+</html>

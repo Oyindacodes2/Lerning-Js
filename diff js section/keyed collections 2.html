@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyed collections 2</title>
+</head>
+<body>
+    
+
+    <script>
+        const private = new WeakMap();
+
+        function Public(){
+            const me = {
+
+            };
+        }
+        Public.prototype.method = function(){
+            const me = privates.get(this);
+
+        };
+        module.exports = Public;
+    </script>
+</body>
+</html>

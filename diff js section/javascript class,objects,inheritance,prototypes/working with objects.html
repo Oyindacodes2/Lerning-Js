@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>working with objects</title>
+</head>
+<body>
+    
+
+    <script>
+         var Mycar = new Object();
+         Mycar.model = 'mustang';
+         Mycar.color = 'yellow';
+         Mycar.wheels = 4;
+
+
+
+         function showProps(obj,objName){
+             var result =``;
+
+             for(i in obj){
+                if(obj.hasOwnProperty(i)){
+                    result += `${objName}.${i}=${obj[i]}\n`;
+                }
+             }
+             return result;
+         }
+
+          console.log(showProps(Mycar,"Mycar"));
+    </script>
+</body>
+</html>

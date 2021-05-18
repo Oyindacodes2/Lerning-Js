@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js form assignment</title>
+</head>
+<style>
+
+    body{
+        padding: 0;
+        margin: 0;
+        background: #9b59b6;
+    }
+    .something{
+     height: 80px;
+     background: rgba(200,34,83,0.7);
+ }
+  ul{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: 36em;
+      padding-top: 25px;
+      top: -10px;
+  }
+  ul li{
+      padding-left: 30px;
+      list-style: none;
+  }
+  ul li a{
+      text-decoration : none;
+      color: #d5d5d5;
+      font-size: 18px;
+      transition: 1s all linear;
+  }
+  ul li a:hover{
+      color: #000;
+      border-bottom: 1px solid #000;
+  }
+   .active{
+      color: #000;
+      border-bottom: 1px groove #000;
+  }
+  .head1{
+      position: absolute;
+      left: 11em;
+      top: 0px;
+      font-family: sans-serif;
+      font-size: larger;
+    
+  }
+  span{
+
+      border: 1px groove #000;
+      color: #d5d5d5;
+      background: #000;
+  }
+    .container{
+        position: relative;
+        margin: 3em auto;
+        background: rgba(255,255,255);
+        left: 30em;
+        border-collapse: collapse;
+        padding: 30px 100px 30px 30px;
+        border-radius: 9px;
+        overflow: hidden;
+        margin-right: 60em;
+    }
+    
+    .all{
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    .all input{
+        box-sizing: content-box;
+        box-shadow: 0px 0.5px 0 0.5px rgba(0,0,0,0.6);
+        display: block;
+        width: 100%;
+    }
+    .all small{
+        position: absolute;
+        visibility: hidden;
+        
+    }
+
+  .all label{
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+      #submit{
+        position: relative;
+        left: 150px;
+        
+    }
+    .submitbtn{
+        padding: 4px;
+        border-radius: 3px;
+        transition: all linear 1s;
+    }
+    .submitbtn:hover{
+        background: #f5d5d7;
+        color: lawngreen;
+        cursor: pointer;
+    }
+
+    h2{
+        text-align: center;
+        position: relative;
+        left: 39px;
+        font-size: 38px;
+        color: #33dce6;
+        margin-top: -10px;
+        margin-bottom: -30px;
+    }
+    #btn{
+        width: 100%;
+        position: relative;
+        top: 0.6em;
+        right: 5.5em;
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+        transition: 1s;
+        cursor: pointer;
+        font-weight: bolder;
+        background: #9b59b6;
+        color: #fff;
+        border-radius: 4px;
+    }
+    #btn:hover{
+            color: #9b59b6;
+            background: #fff;
+    }
+
+    .all.success input{
+        border-color: #2ecc71;
+        
+    }
+    .all.success small{
+        color: #2ecc71;
+    }
+    .all.error input{
+        border-color: #e74c3c;
+    }
+    .all.error small{
+        visibility: visible;
+        color: #e74c3c;
+    }
+    .inner_inp{
+
+        margin-top: 50px;
+    }
+   
+</style>
+<body>
+    <div class="something">
+        <nav>
+            <div class="nav_img">
+               <a href="#"><img src="the witcher.jpg" height="80px"></a>
+            </div>
+            <div class="head1">
+                <h1><span>Covid</span>-Master 19</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="gaming navbar.html">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#">products<i class="fa fa-product-hunt" aria-hidden="true"></i></a></li>
+                    <li><a href="#">about us<i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Contact us<i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Gaming center<i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Support<i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><span class=""></span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <div class="container">
+          
+       <form id="form">
+           <div class="formhead">
+        <h2 class="head">Sign In</h2>
+        </div>
+        <div class="inner_inp">
+            <div class="all" >
+                <label for="fname">Firstname: </label><br>
+                <input type="text" id="fname"><i class="fas fa-exclamation-circle"></i><small>   Error message</small><br><br>
+            </div>
+
+            <div class="all" >
+                <label for="lname">Lastname: </label><br>
+                <input type="text" id="lname"><i class="fas fa-exclamation-circle"></i><small>   Error message</small><br><br>
+            </div>
+
+            <div class="all" >
+                <label for="e_mail">e-mail: </label><br>
+                <input type="email" id="e_mail"><i class="fas fa-exclamation-circle"></i><small>   Error message</small><br><br>
+            </div>
+
+            <div class="all" >
+                <label for="pass">password: </label><br>
+                <input type="password" id="pass"><i class="fas fa-exclamation-circle"></i><small>   Error message</small><br><br>
+            </div>
+
+            <div class="all" >
+                <label for="cpass">Confirm password: </label><br>
+                <input type="password" id="cpass"><i class="fas fa-exclamation-circle"></i><small>   Error message</small><br><br>
+            </div>
+        </div>
+
+            <div id="submit">
+                <input type="submit" value="submit" id="btn">
+            </div>
+        </form>
+
+    </div>
+        <div id="new_div">
+
+        </div>
+    </main>
+    
+    <script>
+       const fname = document.getElementById("fname");
+       const lname = document.getElementById("lname");
+       const e_mail = document.getElementById("e_mail");
+       const pass = document.getElementById("pass");
+       const cpass = document.getElementById("cpass");
+        const btn = document.getElementById("btn");
+        const main = document.querySelectorAll('main');
+       const form = document.getElementById('form');
+        
+        const new_div = document.getElementById("new_div");
+         
+        form.addEventListener('submit',(e)=>{
+            e.preventDefault();
+             checkinput();
+
+             if(checkinput()===true){
+                 details();
+             }
+        });
+
+            function checkinput(){
+                if(fname.value.trim()===''){
+                    //show error
+                    showerror(fname,'firstname cannot be blank');
+                    
+                }
+                else{
+                    //code on success
+                    showsuccess(fname);
+                    
+                }
+
+                if(lname.value.trim()===''){
+                    showerror(lname,'last name cannot be blank');
+                    
+                }else{
+                    showsuccess(lname);
+                    
+                }
+                if(e_mail.value.trim()===''){
+                    showerror(e_mail,'E-mail cannot be blank');
+                }else{
+                    showsuccess(e_mail);
+                }
+                if(pass.value.trim()!==''){
+                    if(pass.value.length>=7){
+                        showsuccess(pass);
+                    }else{
+                        cust_pass(pass,'password length is too short');
+                    }
+                }else{
+                    showerror(pass,'password can never be blank na!');
+                }
+
+               if(cpass.value.trim()!==""){
+                   if(cpass.value.trim()!==pass.value){
+                       showerror(cpass,'password doesnt match');
+                   }else{
+                       showsuccess(cpass);
+                   }
+               }else{
+                   showerror(cpass,'confirm password');
+               }
+            }
+
+            function recheck_pass(input,message){
+                const all = input.parentElement;
+                const c_pass = all.querySeletor('input');
+                const small = all.querySelector('small');
+
+                small.innerText = message;
+                c_pass.style.borderColor = 'red';
+            }
+
+            function cust_pass(input,message){
+                const all = input.parentElement;
+                const pass_inp = all.querySelector('input');
+                const small = all.querySelector('small');
+
+                small.innerText = message;
+
+                pass_inp.style.borderColor = "red";
+            }
+            function setphone_error(input,message){
+                const all = input.parentElement;
+                const ph_inp = all.querySelector('input');
+                const small = all.querySelector('small');
+
+                small.innerText = message;
+                ph_inp.style.borderColor ="red";
+            }
+              function showerror(input,message){
+                  const all = input.parentElement;
+                  const small = all.querySelector('small');
+
+                  small.innerText = message;
+
+                  all.className =  'all error';
+              }
+              function showsuccess(input){
+                  const all = input.parentElement;
+                  small = all.querySelector('small');
+                  
+                 all.className = 'all success';
+                
+                }
+
+                
+
+                /*function details(){
+
+                document.createElement('table').className="table";
+           const table = document.querySelector('table');
+          document.body.append(table);
+
+             const tr = document.createElement('tr');
+             table.appendChild(tr);
+
+             var td;
+          for(let i=0; i<5; i++){
+               td[i] = document.createElement('td');
+          }
+
+             //const td = document.createElement('td');
+             td[0].textContent=fname.value;
+             td[1].textContent=lname.value;
+             td[2].textContent =e_mail.value;
+             td[3].textContent=pass.value;
+             td[4].textContent=cpass.value;
+            
+             tr.appendChild(td[0],td[1],td[2],td[3],td[4]);
+
+        }*/
+              
+             
+            /* var td ={
+                 firstname :fname.value,
+                 lastname : lname.value,
+                 email : e_mail.value,
+                 password : pass.value,
+                 conc_pass : cpass.value
+             }
+             th.appendChild(td.firstname);*/
+          
+    </script>
+</body>
+</html>

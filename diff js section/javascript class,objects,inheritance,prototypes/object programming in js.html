@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object in js 1</title>
+</head>
+<body>
+
+    
+    <script>
+        const person= {
+            name: ['bob','dam'],
+            age: 32,
+            gender : 'male',
+            hobbies :['gaming','coding'],
+            bio : function(){
+                alert(this.name[0]+''+this.name[1]+' is '+this.age + 'years old. he likes'+this.hobbies[0]+' and '+this.hobbies[1]+'.');
+            },
+            greeting : function (){
+                alert('hi! I\'m' +this.name[0]+'.');
+            }
+        };
+    </script>
+</body>
+</html>

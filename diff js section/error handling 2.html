@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handling 2</title>
+</head>
+<body>
+    
+    <p>Type in a number from 1 to 10 below:</p>
+    <input type="text" id="inp">
+    <button type="button" id="btn" onclick="newErr()">click me</button>
+    <br>
+    <p id="p2"></p>
+
+
+    <script>
+         var message, x;
+  message = document.getElementById("p2");
+  message.innerHTML = "";
+  x = document.getElementById("inp").value;
+ var btn = document.getElementById('btn');
+ 
+ 
+  function newErr(){  
+    try { 
+    if(x == "")  throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5)  throw "too low";
+    if(x > 10)   throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+    </script>
+</body>
+</html>

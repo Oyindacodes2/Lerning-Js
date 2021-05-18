@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>error handling js</title>
+</head>
+<body>
+    
+
+    <script>
+        var messg = 'error handling';
+
+        console.log(messg);
+        let json = '{"age":30}';
+
+        let user = JSON.parse(json);
+        try{
+        if(!user.name){
+            throw new SyntaxError("incomplete data: no name,cutom error $damx_101");
+        }
+            console.log(user.name);
+        }
+        catch(e){
+            console.log("JSON error:"+e);
+        }
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dacode2</title>
+</head>
+<body>
+    
+    <script>
+        function findnum(num){
+            let arr =[];
+           
+
+            for(let i=1; i<num; i++){
+                var s ="";
+                if(i%2===0){
+                    s+="yu";
+                    if(i%3===0){
+                        s+="gi"
+                        if(i%5===0){
+                            s+="oh";
+                        }
+                    }
+                    
+                }else if(i%3==0){
+                    s+="gi";
+                    if(i%5==0){
+                        s+="oh";
+                    }
+                }else if(i%2==0){
+                    s+="yu";
+                    if(i%5==0){
+                        s+="oh";
+                    }
+                }else if(i%5==0){
+                    s+="oh";
+                }else{
+                    s+=i;
+                }
+                arr.push(s);
+            }
+            return arr;
+        }
+        var t = findnum(10);
+      
+    </script>
+</body>
+</html>

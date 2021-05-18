@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game company navbar</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b9d108b29a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+  *{
+      margin: 0;
+      padding: 0;
+  }
+ .something{
+     height: 80px;
+     background: rgba(200,34,83,0.7);
+ }
+  ul{
+      display: flex;
+      flex-direction: row;
+      position: absolute;
+      left: 36em;
+      padding-top: 25px;
+      top: 0;
+  }
+  ul li{
+      padding-left: 30px;
+      list-style: none;
+  }
+  ul li a{
+      text-decoration : none;
+      color: #d5d5d5;
+      font-size: 18px;
+      transition: 1s all linear;
+  }
+  ul li a:hover{
+      color: #000;
+      border-bottom: 1px solid #000;
+  }
+   .active{
+      color: #000;
+      border-bottom: 1px groove #000;
+  }
+  .head{
+      position: absolute;
+      left: 11em;
+      top: 20px;
+      font-family: sans-serif;
+      font-size: larger;
+  }
+  span{
+      border: 1px groove #000;
+      color: #d5d5d5;
+      background: #000;
+  }
+  .jumbotron{
+      height: 100vh;
+      width: 100vw;
+      background-image: url('jumbotron backG.jpg');
+  }
+  .container{
+      position: absolute;
+      top: 20em;
+      left: 30em;
+  }
+  .container h1{
+      z-index: 80;
+      font-size: 50px;
+  }
+  .container span{
+    border: 1px groove #000;
+      color: #d5d5d5;
+      background: #000;
+      border-radius: 9px;
+  }
+  .container p{
+      font-weight: bolder;
+      color: red;
+      font-size: 23px;
+  }
+  .jq_class{
+      background: #0d50e0;
+  }
+  .body1{
+      display: inline-block;
+      background: grey;
+      position: relative;
+      left: 0em;
+      top: -33px;
+      padding-top: 2em;
+      width: 100vw;
+      height: 100vh;
+      
+  }
+  .inner-body1{
+      padding-left: 20em;
+      padding-right: 20em;
+      padding-top: 10px;
+  }
+  @media(min-width:1200px){
+      main{
+          padding: 0 5em 0 5em;
+      }
+  }
+  
+</style>
+<body>
+    
+    <div class="something">
+        <nav>
+            <div class="nav_img">
+               <a href="#"><img src="the witcher.jpg" height="80px"></a>
+            </div>
+            <div class="head">
+                <h1><span>Covid</span>-Master 19</h1>
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a class="active" href="gaming navbar.html">Home<i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#">products<i class="fa fa-product-hunt" aria-hidden="true"></i></a></li>
+                    <li><a href="#">about us<i class="fa fa-info-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Contact us<i class="fa fa-address-book" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Gaming center<i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
+                    <li><a href="#">Support<i class="fa fa-question-circle" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-1"><span>Covid</span> games enterprises</h1>      
+          <p>check through dope games for low prices</p>
+        </div>
+      </div>
+    
+     
+     <main> 
+         <!---->
+         <div class="conatiner-fluid row">
+             <div class="body1">
+                 <div class="inner-body1">
+            <h1 class="my-4">Lorem, ipsum dolor.</h1>
+            <p>every one cannot be a preacher of love</p>
+        </div>
+         </div>
+        </div>
+           <!--cards-->
+      <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+             <div class="card">
+                 <img class="card-img-top" src="dead space.jpg">
+                 <div class="card-body">
+                     <h4 class="card-title">Dead space</h4>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis totam nihil et temporibus natus molestias perspiciatis pariatur, quis dolorum!</p>
+                     <a href="#" class="btn btn-outline-secondary">read more</a>
+                 </div>
+             </div>
+            </div>
+            <div class="col-md-4">
+             <div class="card">
+                 <img class="card-img-top" src="itachi.png">
+                 <div class="card-body">
+                     <h4 class="card-title">Naruto</h4>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis totam nihil et temporibus natus molestias perspiciatis pariatur, quis dolorum!</p>
+                     <a href="#" class="btn btn-outline-secondary">read more</a>
+                 </div>
+             </div>
+            </div>
+            <div class="col-md-4">
+             <div class="card">
+                 <img class="card-img-top" src="titanfall2.jpg">
+                 <div class="card-body">
+                     <h4 class="card-title">Titanfall2</h4>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nobis totam nihil et temporibus natus molestias perspiciatis pariatur, quis dolorum!</p>
+                     <a href="#" class="btn btn-outline-secondary">read more</a>
+                 </div>
+             </div>
+            </div>
+        </div>
+    </div>
+
+      <!--for bottom view space-->
+      <div style="margin-bottom: 50em;">
+     </div>
+      <button id="btn">add jquery class</button>
+      
+    </main> 
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        $('#btn').click(function(){
+            $('.something').removeClass().addClass('jq_class');
+        })
+       
+    });
+</script>
+</html>

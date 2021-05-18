@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ad js2</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+const html = document.querySelector('html');
+     const btn = document.createElement('button');
+     btn.textContent = 'show me';
+     html.appendChild(btn);
+     btn.addEventListener('click',function(){
+         if(btn.click !== displayMessage){
+                displayMessage();
+         }
+         else{
+             btn.click == '';
+         }
+     });
+     
+    function displayMessage (){
+        const html = document.querySelector('html');
+        const panel = document.createElement('div');
+        panel.setAttribute('class','msgBx');
+
+        html.appendChild(panel);
+
+        const msg = document.createElement('p');
+        msg.textContent = 'this is a message box';
+
+        panel.appendChild(msg);
+
+        const closeBtn = document.createElement('button');
+        closeBtn.textContent = 'X';
+        panel.appendChild(closeBtn);
+
+        closeBtn.onclick = function (){
+            panel.parentNode.removeChild(panel);
+        }
+    }
+
+      
+
+    </script>
+</body>
+</html>

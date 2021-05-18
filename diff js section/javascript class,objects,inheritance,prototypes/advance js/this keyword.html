@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THis</title>
+</head>
+<body>
+    
+    <script>
+      /*  function identifier(){
+            return this.name.toUpperCase();
+        }
+
+          function speak(){
+              return `Hello ${identifier.call(this)}`;
+          }
+
+            var c = {
+                name:'kyle'
+            }
+            var a ={
+                name:'reader'
+            }
+
+        console.log(speak.call(c));*/
+
+          /* function foo(num){
+               console.log("foo :"+num);
+                foo.count++;
+           }
+             foo.count=0;
+
+               for(let i=0; i<10; i++){
+                   if(i>5){
+                       foo(i);
+                   }
+               }
+               console.log(foo.count);*/
+
+                /* function boo(){
+                     console.log(this.a);
+                 }
+            
+                 var som ={
+                    a:2,
+                    ll:boo()
+                }*/
+
+              /* function foo(something){
+                     console.log(this.a,something);
+                     return this.a+something;
+               }
+             
+             var obj = {
+                a:2
+             }
+              var call = foo.bind(obj);
+               var b = call(3)
+             console.log(b);*/
+
+
+
+             /* class Student {
+                  constructor(firstname,lastname,age,role){
+                      this.name = {firstname:firstname,lastname:lastname};
+                      this.age = age;
+
+                  }
+              }
+                Student.prototype.greetings = function(){
+                    console.log(`Hi my name is ${this.name.firstname} ${this.name.lastname}`)
+                }
+
+                 class teacher extends Student {
+                     constructor(name,age,role,subject_taught){
+                         super(name,age,role);
+                         this.subject_taught = subject_taught;
+                     }
+                 }
+
+                 var bob = new Student('bob','stewy',18,'student');
+                 var jane = new teacher('jane','bretnil',27,'mathematics');
+
+                   console.log(bob);
+                   bob.greetings();
+                   console.log(jane);
+                   jane.greetings();
+
+                   var x;
+                   x = new Number(6);
+                   x.diff = 9;
+                   console.log(x);8*/
+
+               /*  function foo(something){
+                    console.log(this.a = something);
+                 }
+           var obj={
+               foo:foo
+           }
+              var c = obj.foo(2);
+              console.log(obj.a);*/
+
+              /* function foo(a,b){
+                   console.log(`a: ${a} ,b:${b}`);
+               }
+               var x = Object.create(null);
+
+               foo.apply(x,[2,3]);
+
+               var bar = foo.bind(x,2);
+               bar(3);*/Object
+
+               function foo(){
+                   return (a)=>{
+                       console.log(this.a);
+                   }
+               }
+
+               var obj1 ={
+                   a:4
+               }
+
+               var obj2 ={
+                   a:3
+               }
+               var bar = foo.call(obj1)
+               bar.call(obj2);
+              
+    </script>
+
+</body>
+</html>

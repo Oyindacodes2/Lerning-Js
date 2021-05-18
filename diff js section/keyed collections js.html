@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyed collections</title>
+</head>
+<body>
+    
+
+    <script>
+        let sayings = new Map();
+
+        sayings.set('dog','bark');
+        sayings.set('cats','meows');
+        sayings.set('elephant','toot');
+
+        sayings.size;
+        sayings.get('dog');
+        sayings.get('fox');
+        sayings.has('bird');
+        sayings.delete('dog');
+        sayings.has('dogs');
+
+       for(let[key,value] of sayings){
+           console.log(key+' goes '+value);
+       }
+
+       sayings.clear();
+       sayings.size;
+    </script>
+</body>
+</html>

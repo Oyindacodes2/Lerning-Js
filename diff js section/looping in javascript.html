@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping</title>
+</head>
+<body>
+    
+    <script>
+        let n =0;
+        let i=0;
+
+        while(i<5){
+            i++;
+            if(i===3){
+                continue;
+            }
+            n +=i;
+            console.log(n);
+        }
+
+
+        function dump_car(obj,Cars){
+            let result = '';
+            for(var i in obj){
+                result += Cars +'.'+i+'='+obj[i]+'<br>';
+            }
+            result +='<hr>';
+            return result;
+        }
+        var Cars ={
+            make :'ford',
+            model :'mustang'
+        }
+        dump_car(Cars);
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using this javascript</title>
+</head>
+<body>
+    
+
+    <script>
+        function person(){
+            var self = this;
+            self.age =0;
+
+             setInterval(function growUp(){
+                //In nonstrict mode, the growUp function defines 'this'
+                //as the global object, which is different from 'this'
+                //defined by the person constructor
+                self.age++;
+
+              
+                
+            },1000);
+        }
+      let i,j;
+      i=10;
+      
+      var p = new person();
+       for(j=0; j<=i; j++){
+        console.log(person); 
+       }
+       
+
+        
+
+       
+       
+       
+    </script>
+</body>
+</html>

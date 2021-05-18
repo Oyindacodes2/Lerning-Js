@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>protypes js</title>
+</head>
+<body>
+    
+    <script>
+
+
+        /*function particle(x,y){
+            this.x =x;
+            this.y=y;
+        }
+
+          particle.prototype.divide_part = function(){
+              point(this.x,this.y);
+          }
+          var p = new particle(23,45)
+
+         
+          function Book(title,author) {
+		 this.title="Pride and Prejudice";
+         this.author ="Jane Austen";
+         this.met1 =function gettitle(){
+     return "Title: "+this.title;
+     this.met2 = function getauthor(){
+	 return "Author: "+this.author;
+ }
+ }
+ }*/
+ 
+ function addNums(nums) {
+ 
+let z=nums.split(","," ");
+	let total= 0;
+	for(let i=0; i<z.length; i++){
+		total+=z[i];
+	}
+	return total;
+		
+}
+var x=addNums("2, 3, 4, 5, 6")
+
+console.log(x);
+
+
+    </script>
+</body>
+</html>

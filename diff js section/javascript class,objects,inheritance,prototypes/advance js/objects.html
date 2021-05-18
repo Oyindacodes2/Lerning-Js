@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    
+    <script>
+        
+          /*   var myObj ={};
+        Object.defineProperty(myObj,"a",{
+            value:2,
+            writable:false,
+            configurable:true,
+            enumerable:true
+        });
+         myObj.a =3;
+         console.log(myObj.a);*/
+
+     /* try{  var myObj={
+             a:4
+         }
+           Object.defineProperty(myObj,"a",{
+               value:2,
+               writable:true,
+               configurable:true,
+               enumerable:true
+           });
+           console.log(myObj.a);
+           Object.defineProperty(myObj,"a",{
+               value:5,
+               writable:true,
+                configurable:false,
+                enumerable:true
+           });
+           console.log(myObj.a);
+           Object.defineProperty(myObj,"a",{   
+               value:7,
+               writable:true,    
+               configurable:true,
+               enumerable:true
+           });
+        } 
+        catch(e){
+            console.log(e);
+        }*/
+
+          class Rectangle {
+              constructor(width,length,color){
+                this.width = width,
+                this.length = length,
+                this.color = color
+              }
+
+
+          }
+
+      Rectangle.prototype.calc_area = function(){
+           console.log(this.width * this.length);
+      }
+
+        let bob_rect = new Rectangle(10,20,"blue");
+        let sarah_rect = new Rectangle(5,15,"purple");
+      sarah_rect.calc_area();
+
+
+     </script>
+</body>
+</html>
